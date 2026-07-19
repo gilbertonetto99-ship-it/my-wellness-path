@@ -263,5 +263,5 @@ export function isAnswered(q: Question, answers: AssessmentAnswers): boolean {
   if (!q.key) return false;
   const v = answers[q.key];
   if (Array.isArray(v)) return v.length > 0;
-  return v !== undefined && v !== null && v !== "";
+  return v !== undefined && v !== null;
 }
