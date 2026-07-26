@@ -46,9 +46,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="font-display text-3xl text-foreground">Something went wrong</h1>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Please try again in a moment.
-        </p>
+        <p className="mt-2 text-sm text-muted-foreground">Please try again in a moment.</p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
             onClick={() => {
@@ -71,9 +69,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-const SITE_TITLE = "StrideWell — Personalized walking wellness for women 40+";
+const SITE_TITLE = "Move Again — A Realistic Walking Plan for Women 40+";
 const SITE_DESC =
-  "A calm, personalized walking-based wellness plan built around your lifestyle. Take the 3-minute assessment.";
+  "Take the free 3-minute assessment and discover a realistic walking routine shaped around your schedule, energy, and starting point.";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -82,12 +80,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: SITE_TITLE },
       { name: "description", content: SITE_DESC },
-      { name: "author", content: "StrideWell" },
+      { name: "author", content: "Move Again" },
       { property: "og:title", content: SITE_TITLE },
       { property: "og:description", content: SITE_DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "theme-color", content: "#f5f3ec" },
+      { name: "theme-color", content: "#fcfbf8" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

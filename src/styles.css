@@ -57,32 +57,29 @@
 
 :root {
   --radius: 1rem;
-  /* Warm off-white background */
-  --background: oklch(0.985 0.008 90);
-  --foreground: oklch(0.22 0.02 160);
-  --ink: oklch(0.18 0.015 160);
-  --card: oklch(0.995 0.005 90);
-  --card-foreground: oklch(0.22 0.02 160);
-  --popover: oklch(0.995 0.005 90);
-  --popover-foreground: oklch(0.22 0.02 160);
-  /* Deep sage/forest primary */
-  --primary: oklch(0.38 0.055 160);
-  --primary-foreground: oklch(0.985 0.008 90);
-  --secondary: oklch(0.94 0.015 100);
-  --secondary-foreground: oklch(0.22 0.02 160);
-  --muted: oklch(0.945 0.012 95);
-  --muted-foreground: oklch(0.48 0.02 140);
-  --stone-soft: oklch(0.93 0.015 90);
-  /* Warm sand accent */
-  --accent: oklch(0.88 0.05 75);
-  --accent-foreground: oklch(0.28 0.04 60);
-  --sand: oklch(0.82 0.07 70);
-  --sand-foreground: oklch(0.25 0.04 60);
-  --destructive: oklch(0.55 0.2 25);
-  --destructive-foreground: oklch(0.985 0.008 90);
-  --border: oklch(0.9 0.012 90);
-  --input: oklch(0.92 0.012 90);
-  --ring: oklch(0.55 0.06 160);
+  --background: #fcfbf8;
+  --foreground: #202622;
+  --ink: #202622;
+  --card: #fffefa;
+  --card-foreground: #202622;
+  --popover: #fffefa;
+  --popover-foreground: #202622;
+  --primary: #24584a;
+  --primary-foreground: #fcfbf8;
+  --secondary: #eff6f3;
+  --secondary-foreground: #173e35;
+  --muted: #f6f3ec;
+  --muted-foreground: #656760;
+  --stone-soft: #e7e2d9;
+  --accent: #f7e5d9;
+  --accent-foreground: #603f2e;
+  --sand: #e8b99d;
+  --sand-foreground: #4f3528;
+  --destructive: #a7473f;
+  --destructive-foreground: #fffefa;
+  --border: #e7e2d9;
+  --input: #ddd8ce;
+  --ring: #3c7564;
   --chart-1: oklch(0.5 0.08 160);
   --chart-2: oklch(0.7 0.07 70);
   --chart-3: oklch(0.55 0.06 190);
@@ -153,6 +150,7 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    min-width: 320px;
   }
 
   .font-display {
@@ -160,4 +158,92 @@
     font-feature-settings: "liga", "dlig";
     letter-spacing: -0.01em;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image:
+    radial-gradient(
+      circle at 8% 6%,
+      color-mix(in oklab, var(--primary) 5%, transparent),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 94% 12%,
+      color-mix(in oklab, var(--sand) 9%, transparent),
+      transparent 22%
+    );
+}
+
+::selection {
+  background: color-mix(in oklab, var(--primary) 20%, white);
+  color: var(--foreground);
+}
+
+.marketing-card {
+  border: 1px solid color-mix(in oklab, var(--border) 92%, transparent);
+  background: color-mix(in oklab, var(--card) 96%, transparent);
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 70px -48px rgba(23, 62, 53, 0.42);
+}
+
+.marketing-focus:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--ring) 58%, white);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.premium-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid color-mix(in oklab, var(--primary) 22%, transparent);
+  background: color-mix(in oklab, var(--card) 90%, transparent);
+  color: var(--primary);
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 650;
+  box-shadow: 0 8px 24px rgba(36, 76, 61, 0.06);
+}
+.premium-cta {
+  display: inline-flex;
+  min-height: 3.6rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0 1.65rem;
+  font-weight: 650;
+  box-shadow: 0 18px 35px -18px color-mix(in oklab, var(--primary) 70%, transparent);
+  transition: 0.2s ease;
+}
+.premium-cta:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+.premium-card {
+  border: 1px solid color-mix(in oklab, var(--border) 90%, transparent);
+  background: color-mix(in oklab, var(--card) 88%, transparent);
+  border-radius: 1.6rem;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px -34px rgba(36, 76, 61, 0.35);
+  backdrop-filter: blur(12px);
 }
