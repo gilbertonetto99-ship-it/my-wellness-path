@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "sdk_version": "0.24.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "stridewell-mcp",
+      "version": "0.1.0",
+      "title": "StrideWell MCP"
+    },
+    "tools": [
+      {
+        "name": "list_assessment_questions",
+        "title": "List assessment questions",
+        "description": "List the walking-wellness assessment questions with their answer options and value codes. Call this before build_walking_plan to learn the valid answer values.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "build_walking_plan",
+        "title": "Build a personalized walking plan",
+        "description": "Generate StrideWell's personalized result from assessment answers: profile archetype, 4-week walking progression, habit stack, and a 24-week weight projection estimate. Use list_assessment_questions for valid answer codes. Estimates only, not medical advice.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "currentActivity": {
+              "type": "string",
+              "enum": [
+                "none",
+                "inconsistent",
+                "few-times",
+                "most-days"
+              ],
+              "description": "How much the person currently moves in a typical week."
+            },
+            "startingWalk": {
+              "type": "string",
+              "enum": [
+                "10",
+                "15",
+                "20",
+                "30-plus"
+              ],
+              "description": "Minutes of walking per day that feel realistic to start with."
+            },
+            "primaryBarrier": {
+              "type": "string",
+              "enum": [
+                "time",
+                "variable-energy",
+                "motivation",
+                "discomfort",
+                "all-or-nothing"
+              ],
+              "description": "The main thing that has gotten in the way before."
+            },
+            "ageRange": {
+              "description": "Age band. Defaults to 45-49 when omitted.",
+              "type": "string",
+              "enum": [
+                "40-44",
+                "45-49",
+                "50-54",
+                "55-59",
+                "60+"
+              ]
+            },
+            "heightInches": {
+              "description": "Total height in inches, e.g. 65. Defaults to 64.",
+              "type": "number"
+            },
+            "currentWeightLb": {
+              "description": "Current weight in pounds. Defaults to 175.",
+              "type": "number"
+            },
+            "goalWeightLb": {
+              "description": "Goal weight in pounds. Defaults to 20 lb below current weight.",
+              "type": "number"
+            },
+            "sleep": {
+              "description": "Typical sleep quality; influences the habit stack.",
+              "type": "string",
+              "enum": [
+                "poor",
+                "fair",
+                "good",
+                "great"
+              ]
+            },
+            "stress": {
+              "description": "Typical stress level; influences the habit stack.",
+              "type": "string",
+              "enum": [
+                "low",
+                "moderate",
+                "high",
+                "very-high"
+              ]
+            }
+          },
+          "required": [
+            "currentActivity",
+            "startingWalk",
+            "primaryBarrier"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
