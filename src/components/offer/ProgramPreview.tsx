@@ -48,7 +48,7 @@ export function ProgramPreview() {
                 aspectRatio="4 / 5"
               />
               <ProgramMockup
-                src="/assets/mockups/stretch-guide.webp"
+                src="/images/gentle-stretch.webp"
                 alt="Preview of the stretch guide"
                 sizes="(min-width: 1024px) 12vw, 44vw"
                 aspectRatio="4 / 5"

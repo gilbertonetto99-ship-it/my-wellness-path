@@ -39,7 +39,7 @@ const DELIVERABLES = [
     title: "Mobility and Recovery Library",
     format: "Video library",
     benefit: "Choose a lighter movement option when recovery or flexibility is the better fit.",
-    preview: "/assets/program/stretch-guide.webp",
+    preview: "/images/gentle-stretch.webp",
   },
   {
     icon: NotebookPen,

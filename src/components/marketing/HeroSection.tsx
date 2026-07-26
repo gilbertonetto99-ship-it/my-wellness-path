@@ -51,7 +51,7 @@ export function HeroSection() {
               className="absolute -inset-8 -z-10 rounded-full bg-primary/8 blur-3xl"
             />
             <EditorialImage
-              src="/assets/hero/hero-walking.webp"
+              src="/images/hero-walking.webp"
               alt="A woman enjoying a calm walk outdoors"
               priority
               sizes="(min-width: 1024px) 50vw, 92vw"

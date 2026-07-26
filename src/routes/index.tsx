@@ -26,14 +26,14 @@ function LandingPage() {
         <HeroSection />
         <RecognitionSection />
         <ImageSection
-          src="/assets/lifestyle/walking-park.webp"
+          src="/images/walking-park.webp"
           alt="A restorative walk through a green park"
         />
         <MethodSection />
         <ResultPreviewSection />
         <AudienceSection />
         <ImageSection
-          src="/assets/lifestyle/morning-routine.webp"
+          src="/images/planning-routine.webp"
           alt="A calm morning routine prepared for the day"
           align="left"
         />

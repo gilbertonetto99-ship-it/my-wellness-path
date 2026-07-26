@@ -8,6 +8,14 @@ export function FinalCTASection() {
     <section className="pb-20 pt-10 sm:pb-24 lg:pb-30" aria-labelledby="final-cta-title">
       <MarketingContainer>
         <div className="relative overflow-hidden rounded-[2rem] border border-primary/10 bg-secondary px-6 py-14 text-center sm:px-10 sm:py-18 lg:py-22">
+          <img
+            src="/images/final-cta-sunset.webp"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            className="absolute inset-0 size-full object-cover opacity-20"
+          />
           <div
             aria-hidden="true"
             className="absolute -right-24 -top-24 size-72 rounded-full border-[42px] border-primary/[0.035]"
