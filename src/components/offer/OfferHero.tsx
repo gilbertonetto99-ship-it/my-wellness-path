@@ -1,6 +1,7 @@
 import { ArrowRight, Check } from "lucide-react";
 import type { ResultPersonalization } from "../../lib/result-personalization";
 import { MarketingContainer } from "../marketing/MarketingContainer";
+import { EditorialImage } from "../visuals/EditorialImage";
 
 export function OfferHero({ result }: { result: ResultPersonalization | null }) {
   const styleName = result?.startingStyle.name;
@@ -58,6 +59,13 @@ export function OfferHero({ result }: { result: ResultPersonalization | null }) 
               className="size-4 transition-transform group-hover:translate-x-0.5"
             />
           </a>
+          <EditorialImage
+            src="/assets/lifestyle/journal.webp"
+            alt="A thoughtfully arranged wellness journal and weekly plan"
+            sizes="(min-width: 1024px) 70vw, 92vw"
+            aspectRatio="16 / 7"
+            className="mt-12 text-left"
+          />
         </div>
       </MarketingContainer>
     </section>

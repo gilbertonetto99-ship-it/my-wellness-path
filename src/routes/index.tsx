@@ -8,6 +8,7 @@ import { MethodSection } from "../components/marketing/MethodSection";
 import { RecognitionSection } from "../components/marketing/RecognitionSection";
 import { ResultPreviewSection } from "../components/marketing/ResultPreviewSection";
 import { TrustSection } from "../components/marketing/TrustSection";
+import { ImageSection } from "../components/visuals/ImageSection";
 
 export const Route = createFileRoute("/")({ component: LandingPage });
 
@@ -24,9 +25,18 @@ function LandingPage() {
       <main id="main-content">
         <HeroSection />
         <RecognitionSection />
+        <ImageSection
+          src="/assets/lifestyle/walking-park.webp"
+          alt="A restorative walk through a green park"
+        />
         <MethodSection />
         <ResultPreviewSection />
         <AudienceSection />
+        <ImageSection
+          src="/assets/lifestyle/morning-routine.webp"
+          alt="A calm morning routine prepared for the day"
+          align="left"
+        />
         <TrustSection />
         <FinalCTASection />
       </main>

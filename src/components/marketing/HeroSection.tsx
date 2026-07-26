@@ -1,6 +1,7 @@
 import { Check, ShieldCheck } from "lucide-react";
 import { MarketingContainer } from "./MarketingContainer";
 import { MarketingCTA } from "./MarketingCTA";
+import { EditorialImage } from "../visuals/EditorialImage";
 
 const BENEFITS = ["Low-impact walking", "Realistic weekly pace", "Built for real life"];
 
@@ -8,7 +9,7 @@ export function HeroSection() {
   return (
     <section className="overflow-hidden pb-20 pt-10 sm:pb-24 sm:pt-14 lg:pb-30 lg:pt-20">
       <MarketingContainer>
-        <div className="grid items-center gap-12 lg:grid-cols-[1.08fr_.92fr] lg:gap-14">
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1fr] lg:gap-14">
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-card/85 px-3.5 py-2 text-xs font-semibold text-primary shadow-sm">
               <span aria-hidden="true" className="size-1.5 rounded-full bg-primary" />
@@ -49,16 +50,13 @@ export function HeroSection() {
               aria-hidden="true"
               className="absolute -inset-8 -z-10 rounded-full bg-primary/8 blur-3xl"
             />
-            <div className="overflow-hidden rounded-[2rem] border border-white/80 bg-card shadow-[0_36px_90px_-42px_rgba(23,62,53,.5)]">
-              <img
-                src="/wellness-hero.svg"
-                alt="Illustration of a woman enjoying a walk outdoors"
-                width="900"
-                height="760"
-                fetchPriority="high"
-                className="h-auto w-full"
-              />
-            </div>
+            <EditorialImage
+              src="/assets/hero/hero-walking.webp"
+              alt="A woman enjoying a calm walk outdoors"
+              priority
+              sizes="(min-width: 1024px) 50vw, 92vw"
+              aspectRatio="6 / 7"
+            />
             <div className="absolute -bottom-5 left-4 right-4 rounded-2xl border border-white/80 bg-card/94 p-4 shadow-[0_20px_45px_-28px_rgba(23,62,53,.5)] backdrop-blur sm:left-8 sm:right-auto sm:min-w-64">
               <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
                 A calmer approach

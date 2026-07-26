@@ -1,6 +1,7 @@
 import { CheckCircle2, Play, Sheet, Video } from "lucide-react";
 import { MarketingContainer } from "../marketing/MarketingContainer";
 import { SectionEyebrow } from "../marketing/SectionEyebrow";
+import { ProgramMockup } from "../visuals/EditorialImage";
 
 const WEEK_ITEMS = [
   { icon: Play, label: "Weekly overview", meta: "Start here" },
@@ -32,7 +33,28 @@ export function ProgramPreview() {
             </p>
           </div>
           <div className="rounded-[2rem] border border-primary/12 bg-secondary/60 p-4 shadow-[0_34px_80px_-52px_rgba(23,62,53,.55)] sm:p-7">
-            <div className="rounded-3xl border border-border bg-card p-5 sm:p-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <ProgramMockup
+                src="/assets/mockups/program-preview.webp"
+                alt="Preview of the weekly program materials"
+                sizes="(min-width: 1024px) 24vw, 44vw"
+                aspectRatio="4 / 5"
+                className="col-span-2"
+              />
+              <ProgramMockup
+                src="/assets/mockups/habit-tracker.webp"
+                alt="Preview of the printable habit tracker"
+                sizes="(min-width: 1024px) 12vw, 44vw"
+                aspectRatio="4 / 5"
+              />
+              <ProgramMockup
+                src="/assets/mockups/stretch-guide.webp"
+                alt="Preview of the stretch guide"
+                sizes="(min-width: 1024px) 12vw, 44vw"
+                aspectRatio="4 / 5"
+              />
+            </div>
+            <div className="mt-4 rounded-3xl border border-border bg-card p-5 sm:p-6">
               <div className="flex items-center justify-between gap-4 border-b border-border pb-5">
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
