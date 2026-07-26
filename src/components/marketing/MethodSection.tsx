@@ -4,18 +4,18 @@ import { SectionEyebrow } from "./SectionEyebrow";
 const STEPS = [
   {
     number: "01",
-    title: "Start Where You Are",
-    copy: "Choose a starting point that feels realistic enough to repeat—not one based on pressure or perfection.",
+    title: "Build Confidence",
+    copy: "Begin at a level that feels comfortable and clear.",
   },
   {
     number: "02",
-    title: "Build a Flexible Weekly Rhythm",
-    copy: "Use simple walking windows and smaller backup options that fit around your real schedule.",
+    title: "Create Consistency",
+    copy: "Build a flexible rhythm around your real week.",
   },
   {
     number: "03",
-    title: "Know How to Return",
-    copy: "Learn how to come back after a missed day or difficult week without starting from zero.",
+    title: "Enjoy Movement Naturally",
+    copy: "Enjoy showing up—and know how to return after a pause.",
   },
 ];
 
@@ -23,7 +23,7 @@ export function MethodSection() {
   return (
     <section
       id="how-it-works"
-      className="scroll-mt-24 py-20 sm:py-24 lg:py-30"
+      className="section-soft-divider scroll-mt-24 py-20 sm:py-24 lg:py-30"
       aria-labelledby="method-title"
     >
       <MarketingContainer>
@@ -33,16 +33,18 @@ export function MethodSection() {
             id="method-title"
             className="font-display text-4xl leading-[1.03] tracking-[-0.025em] text-foreground sm:text-5xl lg:text-6xl"
           >
-            A Routine Built for Repeatability—Not Perfection.
+            The Move Again Method.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
-            Move Again helps you create a steady rhythm through small decisions that remain workable
-            when life changes.
+            Three simple stages. One realistic path you can keep returning to.
           </p>
         </div>
         <ol className="relative mt-12 grid gap-5 lg:grid-cols-3">
           {STEPS.map((step) => (
-            <li key={step.number} className="marketing-card relative overflow-hidden p-7 sm:p-8">
+            <li
+              key={step.number}
+              className="marketing-card method-card premium-hover-card relative overflow-hidden p-7 sm:p-8"
+            >
               <div
                 aria-hidden="true"
                 className="absolute -right-3 -top-6 font-display text-8xl text-primary/[0.055]"

@@ -5,44 +5,39 @@ import { SectionEyebrow } from "./SectionEyebrow";
 
 export function FinalCTASection() {
   return (
-    <section className="pb-20 pt-10 sm:pb-24 lg:pb-30" aria-labelledby="final-cta-title">
+    <section
+      className="final-cinematic relative isolate flex min-h-[72svh] items-center overflow-hidden py-24 text-center sm:py-30"
+      aria-labelledby="final-cta-title"
+    >
+      <img
+        src="/images/final-cta-sunset.webp"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        className="absolute inset-0 -z-20 size-full object-cover"
+      />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(23,62,53,.82),rgba(23,62,53,.5))]" />
       <MarketingContainer>
-        <div className="relative overflow-hidden rounded-[2rem] border border-primary/10 bg-secondary px-6 py-14 text-center sm:px-10 sm:py-18 lg:py-22">
-          <img
-            src="/images/final-cta-sunset.webp"
-            alt=""
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            className="absolute inset-0 size-full object-cover opacity-20"
-          />
-          <div
-            aria-hidden="true"
-            className="absolute -right-24 -top-24 size-72 rounded-full border-[42px] border-primary/[0.035]"
-          />
-          <div
-            aria-hidden="true"
-            className="absolute -bottom-28 -left-24 size-72 rounded-full border-[42px] border-sand/[0.12]"
-          />
-          <div className="relative mx-auto max-w-3xl">
-            <SectionEyebrow>Your next step</SectionEyebrow>
-            <h2
-              id="final-cta-title"
-              className="font-display text-4xl leading-[1.03] tracking-[-0.025em] text-foreground sm:text-5xl lg:text-6xl"
-            >
-              Your Next Routine Does Not Need to Begin With a Dramatic Reset.
-            </h2>
-            <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-muted-foreground">
-              Start with a few thoughtful questions and discover a walking direction designed around
-              your life now.
-            </p>
-            <MarketingCTA className="mt-8" />
-            <p className="mt-4 flex items-center justify-center gap-2 text-sm text-muted-foreground">
-              <ShieldCheck aria-hidden="true" className="size-4 text-primary" />
-              Free <span aria-hidden="true">·</span> No Credit Card{" "}
-              <span aria-hidden="true">·</span> About 3 Minutes
-            </p>
-          </div>
+        <div className="mx-auto max-w-3xl text-primary-foreground">
+          <SectionEyebrow>Your next step</SectionEyebrow>
+          <h2
+            id="final-cta-title"
+            className="font-display text-5xl leading-[.96] tracking-[-0.03em] sm:text-6xl lg:text-7xl"
+          >
+            You Can Begin Gently—and Still Move Forward.
+          </h2>
+          <p className="mx-auto mt-6 max-w-lg text-lg leading-8 text-primary-foreground/78">
+            Discover a walking direction designed around your life now.
+          </p>
+          <MarketingCTA className="mt-10 bg-primary-foreground text-primary hover:brightness-95">
+            Find My Starting Plan
+          </MarketingCTA>
+          <p className="mt-4 flex items-center justify-center gap-2 text-sm text-primary-foreground/72">
+            <ShieldCheck aria-hidden="true" className="size-4" />
+            Free <span aria-hidden="true">·</span> No Credit Card <span aria-hidden="true">·</span>{" "}
+            About 3 Minutes
+          </p>
         </div>
       </MarketingContainer>
     </section>

@@ -8,6 +8,10 @@ import { MethodSection } from "../components/marketing/MethodSection";
 import { RecognitionSection } from "../components/marketing/RecognitionSection";
 import { ResultPreviewSection } from "../components/marketing/ResultPreviewSection";
 import { TrustSection } from "../components/marketing/TrustSection";
+import { TransformationSection } from "../components/marketing/TransformationSection";
+import { ProgramValueSection } from "../components/marketing/ProgramValueSection";
+import { LifestyleResetSection } from "../components/marketing/LifestyleResetSection";
+import { YoungerAgainSection } from "../components/marketing/YoungerAgainSection";
 import { ImageSection } from "../components/visuals/ImageSection";
 
 export const Route = createFileRoute("/")({ component: LandingPage });
@@ -22,22 +26,26 @@ function LandingPage() {
         Skip to main content
       </a>
       <MarketingHeader />
-      <main id="main-content">
+      <main id="main-content" className="landing-premium">
         <HeroSection />
         <RecognitionSection />
-        <ImageSection
-          src="/images/walking-park.webp"
-          alt="A restorative walk through a green park"
-        />
+        <TransformationSection />
         <MethodSection />
-        <ResultPreviewSection />
-        <AudienceSection />
+        <ImageSection
+          src="/images/gentle-stretch.webp"
+          alt="A gentle stretching ritual in a calm space"
+        />
+        <YoungerAgainSection />
+        <LifestyleResetSection />
+        <ProgramValueSection />
         <ImageSection
           src="/images/planning-routine.webp"
           alt="A calm morning routine prepared for the day"
           align="left"
         />
+        <AudienceSection />
         <TrustSection />
+        <ResultPreviewSection />
         <FinalCTASection />
       </main>
       <MarketingFooter />
