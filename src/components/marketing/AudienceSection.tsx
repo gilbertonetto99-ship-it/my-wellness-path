@@ -3,10 +3,13 @@ import { MarketingContainer } from "./MarketingContainer";
 import { SectionEyebrow } from "./SectionEyebrow";
 
 const FIT_POINTS = [
-  { title: "Busy or tired?", copy: "Choose a pace that fits today." },
-  { title: "Starting later?", copy: "Begin exactly where you are." },
-  { title: "Stopped before?", copy: "Use a plan designed for returning." },
-  { title: "Unsure what to do?", copy: "Follow one clear next step." },
+  { title: "Know what to do each week.", copy: "Follow a clear next step instead of guessing." },
+  { title: "Start at a realistic level.", copy: "Begin from where you are without catching up." },
+  { title: "Fit movement into real life.", copy: "Plan around the time and energy you have." },
+  {
+    title: "Stay consistent without pressure.",
+    copy: "Track small actions and return after interruptions.",
+  },
 ];
 
 export function AudienceSection() {
@@ -20,17 +23,18 @@ export function AudienceSection() {
               id="audience-title"
               className="font-display text-4xl leading-[1.03] tracking-[-0.025em] text-foreground sm:text-5xl lg:text-6xl"
             >
-              There Is Room for You Here.
+              Clear Guidance for Your Real Life.
             </h2>
             <p className="mt-5 text-lg leading-8 text-muted-foreground">
-              No pressure. No catching up. Just a clear place to begin.
+              No complicated workouts or perfect streaks—just practical guidance for building a
+              routine you can maintain.
             </p>
           </div>
           <ul className="grid gap-3 sm:grid-cols-2" aria-label="Who Move Again is for">
             {FIT_POINTS.map((point) => (
               <li
                 key={point.title}
-                className="marketing-card premium-hover-card flex min-h-31 items-start gap-4 p-5 sm:p-6"
+                className="marketing-card premium-hover-card flex items-start gap-4 p-5 sm:min-h-31 sm:p-6"
               >
                 <span className="premium-icon-well mt-0.5 grid size-8 shrink-0 place-items-center rounded-full text-primary">
                   <Check aria-hidden="true" className="size-4" strokeWidth={2.5} />

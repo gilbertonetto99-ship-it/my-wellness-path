@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { AudienceSection } from "../components/marketing/AudienceSection";
 import { FinalCTASection } from "../components/marketing/FinalCTASection";
 import { HeroSection } from "../components/marketing/HeroSection";
+import { HeroTrustStrip } from "../components/marketing/HeroTrustStrip";
+import { LandingConversionSupport } from "../components/marketing/LandingConversionSupport";
 import { MarketingFooter } from "../components/marketing/MarketingFooter";
 import { MarketingHeader } from "../components/marketing/MarketingHeader";
 import { MethodSection } from "../components/marketing/MethodSection";
@@ -18,7 +20,7 @@ export const Route = createFileRoute("/")({ component: LandingPage });
 
 function LandingPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background pb-24 text-foreground md:pb-0">
       <a
         href="#main-content"
         className="marketing-focus fixed left-4 top-3 z-50 -translate-y-20 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform focus:translate-y-0"
@@ -28,6 +30,7 @@ function LandingPage() {
       <MarketingHeader />
       <main id="main-content" className="landing-premium">
         <HeroSection />
+        <HeroTrustStrip />
         <RecognitionSection />
         <TransformationSection />
         <MethodSection />
@@ -49,6 +52,7 @@ function LandingPage() {
         <FinalCTASection />
       </main>
       <MarketingFooter />
+      <LandingConversionSupport />
     </div>
   );
 }

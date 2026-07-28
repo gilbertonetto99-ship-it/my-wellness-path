@@ -4,18 +4,23 @@ import { SectionEyebrow } from "./SectionEyebrow";
 const STEPS = [
   {
     number: "01",
-    title: "Build Confidence",
-    copy: "Begin at a level that feels comfortable and clear.",
+    title: "Take the free 3-minute assessment.",
+    copy: "Answer a few simple questions about your starting point and real life.",
   },
   {
     number: "02",
-    title: "Create Consistency",
-    copy: "Build a flexible rhythm around your real week.",
+    title: "Discover your personalized starting plan.",
+    copy: "See a realistic place to begin based on your answers.",
   },
   {
     number: "03",
-    title: "Enjoy Movement Naturally",
-    copy: "Enjoy showing up—and know how to return after a pause.",
+    title: "See how the complete Move Again system fits your lifestyle.",
+    copy: "Explore the 12-week structure and the tools that support your routine.",
+  },
+  {
+    number: "04",
+    title: "Start building a routine you’ll actually keep.",
+    copy: "Move forward with clear guidance designed to work with real life.",
   },
 ];
 
@@ -33,17 +38,17 @@ export function MethodSection() {
             id="method-title"
             className="font-display text-4xl leading-[1.03] tracking-[-0.025em] text-foreground sm:text-5xl lg:text-6xl"
           >
-            The Move Again Method.
+            Your Path Into Move Again.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
-            Three simple stages. One realistic path you can keep returning to.
+            Four simple steps from finding your starting point to building a routine that lasts.
           </p>
         </div>
-        <ol className="relative mt-12 grid gap-5 lg:grid-cols-3">
+        <ol className="relative mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((step) => (
             <li
               key={step.number}
-              className="marketing-card method-card premium-hover-card relative overflow-hidden p-7 sm:p-8"
+              className="marketing-card method-card premium-hover-card relative overflow-hidden p-6 sm:p-8"
             >
               <div
                 aria-hidden="true"
@@ -54,7 +59,7 @@ export function MethodSection() {
               <div className="text-xs font-semibold tracking-[0.16em] text-primary">
                 STEP {step.number}
               </div>
-              <h3 className="mt-8 font-display text-3xl leading-tight text-foreground">
+              <h3 className="mt-7 font-display text-2xl leading-tight text-foreground sm:mt-8 sm:text-3xl">
                 {step.title}
               </h3>
               <p className="mt-3 text-[15px] leading-7 text-muted-foreground">{step.copy}</p>

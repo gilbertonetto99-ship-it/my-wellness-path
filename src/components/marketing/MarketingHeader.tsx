@@ -15,7 +15,7 @@ export function MarketingHeader() {
             How It Works
           </a>
           <MarketingCTA compact className="min-h-11 px-4 sm:px-5">
-            Take the Free Assessment
+            Find My Starting Plan
           </MarketingCTA>
         </nav>
       </MarketingContainer>

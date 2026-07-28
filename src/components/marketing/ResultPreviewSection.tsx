@@ -25,7 +25,7 @@ export function ResultPreviewSection() {
     >
       <MarketingContainer>
         <div className="result-preview-premium overflow-hidden rounded-[2rem] border border-primary/12 bg-primary text-primary-foreground shadow-[0_40px_90px_-50px_rgba(23,62,53,.8)]">
-          <div className="grid gap-10 p-6 sm:p-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center lg:p-14">
+          <div className="grid gap-8 p-6 sm:gap-10 sm:p-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center lg:p-14">
             <div>
               <SectionEyebrow>Free assessment</SectionEyebrow>
               <h2
@@ -36,10 +36,16 @@ export function ResultPreviewSection() {
               </h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-primary-foreground/76 sm:text-lg">
                 In about three minutes, discover a realistic pace and one clear first-week step.
+                Your result then shows how the complete 12-week system can support the routine
+                ahead.
               </p>
-              <MarketingCTA className="mt-9 bg-primary-foreground text-primary shadow-[0_18px_36px_-20px_rgba(0,0,0,.55)] hover:brightness-95">
-                See My Free Starting Plan
+              <MarketingCTA className="mt-7 bg-primary-foreground text-primary shadow-[0_18px_36px_-20px_rgba(0,0,0,.55)] hover:brightness-95 sm:mt-9">
+                Find My Starting Plan
               </MarketingCTA>
+              <p className="mt-4 text-sm leading-6 text-primary-foreground/72">
+                Free 3-minute assessment <span aria-hidden="true">·</span> No credit card{" "}
+                <span aria-hidden="true">·</span> Personalized starting guidance
+              </p>
             </div>
 
             <div className="rounded-[1.6rem] border border-white/15 bg-white/[0.08] p-4 backdrop-blur-sm sm:p-6">
@@ -58,7 +64,7 @@ export function ResultPreviewSection() {
                 {PREVIEW_ITEMS.map(({ icon: Icon, label, value }) => (
                   <div
                     key={label}
-                    className="preview-item flex items-start gap-4 rounded-2xl bg-white/[0.09] p-4"
+                    className="preview-item flex items-start gap-3 rounded-2xl bg-white/[0.09] p-4 sm:gap-4"
                   >
                     <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/12">
                       <Icon aria-hidden="true" className="size-4.5" />

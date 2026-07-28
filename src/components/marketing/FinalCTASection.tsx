@@ -6,7 +6,7 @@ import { SectionEyebrow } from "./SectionEyebrow";
 export function FinalCTASection() {
   return (
     <section
-      className="final-cinematic relative isolate flex min-h-[72svh] items-center overflow-hidden py-24 text-center sm:py-30"
+      className="final-cinematic relative isolate flex min-h-[68svh] items-center overflow-hidden py-20 text-center sm:min-h-[72svh] sm:py-30"
       aria-labelledby="final-cta-title"
     >
       <img
@@ -23,20 +23,21 @@ export function FinalCTASection() {
           <SectionEyebrow>Your next step</SectionEyebrow>
           <h2
             id="final-cta-title"
-            className="font-display text-5xl leading-[.96] tracking-[-0.03em] sm:text-6xl lg:text-7xl"
+            className="font-display text-4xl leading-[.98] tracking-[-0.03em] sm:text-6xl lg:text-7xl"
           >
             You Can Begin Gently—and Still Move Forward.
           </h2>
           <p className="mx-auto mt-6 max-w-lg text-lg leading-8 text-primary-foreground/78">
-            Discover a walking direction designed around your life now.
+            Discover a realistic starting plan, then see how the complete 12-week system helps you
+            know what to do and keep going.
           </p>
-          <MarketingCTA className="mt-10 bg-primary-foreground text-primary hover:brightness-95">
+          <MarketingCTA className="mt-8 bg-primary-foreground text-primary hover:brightness-95 sm:mt-10">
             Find My Starting Plan
           </MarketingCTA>
-          <p className="mt-4 flex items-center justify-center gap-2 text-sm text-primary-foreground/72">
+          <p className="mt-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-primary-foreground/72">
             <ShieldCheck aria-hidden="true" className="size-4" />
-            Free <span aria-hidden="true">·</span> No Credit Card <span aria-hidden="true">·</span>{" "}
-            About 3 Minutes
+            Free 3-minute assessment <span aria-hidden="true">·</span> No credit card{" "}
+            <span aria-hidden="true">·</span> Personalized starting guidance
           </p>
         </div>
       </MarketingContainer>

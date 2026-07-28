@@ -2,7 +2,7 @@ import { Check, ShieldCheck } from "lucide-react";
 import { MarketingContainer } from "./MarketingContainer";
 import { MarketingCTA } from "./MarketingCTA";
 
-const BENEFITS = ["A complete 12-week path", "A pace shaped around you", "Tools for real life"];
+const BENEFITS = ["A complete 12-week path", "A realistic place to begin", "Tools for real life"];
 
 export function HeroSection() {
   return (
@@ -22,21 +22,26 @@ export function HeroSection() {
             <span aria-hidden="true" className="size-1.5 rounded-full bg-dusty-rose" />
             The personalized walking program for women 40+
           </div>
-          <h1 className="mt-6 font-display text-[clamp(3.2rem,11vw,5.6rem)] leading-[0.92] tracking-[-0.04em]">
-            Feel Stronger in Your Life—One Walk at a Time.
+          <h1 className="mt-6 font-display text-[clamp(2.85rem,10vw,5.3rem)] leading-[0.92] tracking-[-0.04em]">
+            Stop Starting Over.
+            <span className="block">Build a Routine You&apos;ll Actually Keep.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-primary-foreground/86 sm:text-xl">
-            A complete 12-week movement system shaped around your energy, schedule, and starting
-            point—so you can build a rhythm that finally feels like yours.
+            Move Again is a complete 12-week walking system designed for women 40+ who want a
+            realistic routine that fits real life.
+          </p>
+          <p className="mt-3 max-w-xl text-base leading-7 text-primary-foreground/78 sm:text-lg">
+            Take the free 3-minute assessment to discover your personalized starting plan and see
+            how the complete Move Again system can work for you.
           </p>
           <div className="mt-8">
             <MarketingCTA className="bg-primary-foreground text-primary hover:brightness-95">
-              Discover My Starting Plan
+              Find My Starting Plan
             </MarketingCTA>
-            <p className="mt-4 flex items-center gap-2 text-sm text-primary-foreground/76">
+            <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-primary-foreground/76">
               <ShieldCheck aria-hidden="true" className="size-4" />
-              Free <span aria-hidden="true">·</span> No credit card{" "}
-              <span aria-hidden="true">·</span> About 3 minutes
+              Free 3-minute assessment <span aria-hidden="true">·</span> No credit card{" "}
+              <span aria-hidden="true">·</span> Personalized starting guidance
             </p>
           </div>
           <ul

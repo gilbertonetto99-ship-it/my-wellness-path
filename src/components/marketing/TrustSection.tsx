@@ -5,17 +5,17 @@ const TRUST_ITEMS = [
   {
     icon: HeartHandshake,
     title: "Designed for Women 40+",
-    copy: "Built around real schedules, changing energy, and sustainable movement.",
+    copy: "Built around real schedules, changing energy, and a routine you can return to.",
   },
   {
     icon: Clock3,
     title: "Clear and Simple",
-    copy: "Three minutes to find a practical starting direction.",
+    copy: "Three minutes to find a realistic starting pace and first-week direction.",
   },
   {
     icon: CreditCard,
     title: "Free to Explore",
-    copy: "See your recommendation with no credit card or purchase.",
+    copy: "See your personalized starting guidance with no credit card or purchase.",
   },
 ];
 
@@ -26,7 +26,7 @@ export function TrustSection() {
       aria-label="Why you can feel comfortable getting started"
     >
       <MarketingContainer>
-        <div className="grid gap-6 border-y border-border py-10 md:grid-cols-3 md:gap-0">
+        <div className="grid gap-5 border-y border-border py-8 sm:gap-6 sm:py-10 md:grid-cols-3 md:gap-0">
           {TRUST_ITEMS.map(({ icon: Icon, title, copy }, index) => (
             <article
               key={title}
