@@ -31,8 +31,8 @@ function PlanPage() {
             A quiet ramp, on purpose.
           </h1>
           <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
-            Each week is a small step up. If a day gets busy, the plan bends
-            with you — not against you.
+            Each week is a small step up. If a day gets busy, the plan bends with you — not against
+            you.
           </p>
         </div>
 
@@ -46,18 +46,14 @@ function PlanPage() {
                 <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                   Week {w.week}
                 </div>
-                <div className="mt-1 font-display text-2xl text-foreground">
-                  {w.focus}
-                </div>
+                <div className="mt-1 font-display text-2xl text-foreground">{w.focus}</div>
               </div>
               <div className="text-right sm:text-left">
                 <div className="font-display text-3xl text-primary">
                   {w.minutesPerDay}
                   <span className="text-base text-muted-foreground"> min</span>
                 </div>
-                <div className="text-xs text-muted-foreground">
-                  {w.daysPerWeek} days / week
-                </div>
+                <div className="text-xs text-muted-foreground">{w.daysPerWeek} days / week</div>
               </div>
             </div>
           ))}
@@ -70,16 +66,15 @@ function PlanPage() {
             Ready for the full program?
           </div>
           <h3 className="mt-2 font-display text-3xl text-foreground">
-            StrideWell — the complete 12-week experience.
+            Move Again — the complete 12-week experience.
           </h3>
           <p className="mt-3 text-base leading-relaxed text-foreground/90">
-            The plan you just saw, extended over 12 weeks. Guided walking
-            audio, a printable habit tracker, a library of gentle recipes and
-            mindset lessons, and weekly rhythm resets.
+            The plan you just saw, extended over 12 weeks. Guided walking audio, the Daily Habit
+            Tracker, a library of gentle recipes and mindset lessons, and weekly rhythm resets.
           </p>
           <div className="mt-6">
             <Link to="/offer">
-              <Button>Unlock the premium program</Button>
+              <Button>Continue To My Plan</Button>
             </Link>
           </div>
         </div>

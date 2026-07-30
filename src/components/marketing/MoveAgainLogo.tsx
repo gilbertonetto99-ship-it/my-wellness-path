@@ -22,7 +22,7 @@ export function MoveAgainLogo() {
           <path d="M8 19h8" stroke="currentColor" strokeWidth="2.1" strokeLinecap="round" />
         </svg>
       </span>
-      <span className="font-display text-[1.65rem] leading-none tracking-[-0.02em] text-foreground">
+      <span className="font-display text-[1.65rem] leading-none tracking-[-0.02em] text-foreground max-[359px]:sr-only">
         Move Again
       </span>
     </Link>

@@ -29,7 +29,7 @@ export function ResultsOfferBridge() {
           to="/offer"
           className="marketing-focus group mt-7 inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-full bg-primary-foreground px-7 text-base font-semibold text-primary shadow-[0_18px_36px_-20px_rgba(0,0,0,.55)] transition-[transform,filter] duration-200 hover:-translate-y-0.5 hover:brightness-95 sm:w-auto"
         >
-          See the Complete 12-Week System
+          Continue To My Plan
           <ArrowRight
             aria-hidden="true"
             className="size-4 transition-transform group-hover:translate-x-0.5"

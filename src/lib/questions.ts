@@ -29,7 +29,7 @@ export const QUIZ_QUESTIONS: QuizQuestionDefinition[] = [
   {
     id: "goal",
     key: "goal",
-    prompt: "What would you most like to feel different over the next 12 weeks?",
+    prompt: "What would you most like to improve over the next 12 weeks?",
     purpose: "Choose the one that matters most to you right now.",
     options: [
       { value: "consistency", label: "More consistent" },
@@ -42,25 +42,13 @@ export const QUIZ_QUESTIONS: QuizQuestionDefinition[] = [
   {
     id: "current-activity",
     key: "currentActivity",
-    prompt: "How much intentional movement are you getting right now?",
+    prompt: "How often are you intentionally walking or moving right now?",
     purpose: "There is no right answer—this simply helps us find your starting point.",
     options: [
       { value: "none", label: "Almost none" },
       { value: "inconsistent", label: "A little, but not consistently" },
       { value: "few-times", label: "A few times a week" },
       { value: "most-days", label: "Most days" },
-    ],
-  },
-  {
-    id: "starting-walk",
-    key: "startingWalk",
-    prompt: "What feels realistic on a normal day?",
-    purpose: "Pick a walking time you could imagine repeating this week.",
-    options: [
-      { value: "10", label: "10 minutes" },
-      { value: "15", label: "15 minutes" },
-      { value: "20", label: "20 minutes" },
-      { value: "30-plus", label: "30 minutes or more" },
     ],
   },
   {
@@ -77,9 +65,21 @@ export const QUIZ_QUESTIONS: QuizQuestionDefinition[] = [
     ],
   },
   {
+    id: "starting-walk",
+    key: "startingWalk",
+    prompt: "How much walking feels realistic on a normal day?",
+    purpose: "Pick an amount you could imagine repeating this week.",
+    options: [
+      { value: "10", label: "10 minutes" },
+      { value: "15", label: "15 minutes" },
+      { value: "20", label: "20 minutes" },
+      { value: "30-plus", label: "30 minutes or more" },
+    ],
+  },
+  {
     id: "routine-window",
     key: "routineWindow",
-    prompt: "When would movement fit most naturally?",
+    prompt: "When would a walk fit most naturally into your real life?",
     purpose: "Think about your usual week, not an ideal one.",
     options: [
       { value: "morning", label: "Morning" },
@@ -105,8 +105,8 @@ export const QUIZ_QUESTIONS: QuizQuestionDefinition[] = [
   {
     id: "desired-support",
     key: "desiredSupport",
-    prompt: "What would make consistency easier?",
-    purpose: "Choose the kind of support you would value most.",
+    prompt: "What kind of support would help you keep going?",
+    purpose: "Choose the support you would value most once you begin.",
     options: [
       { value: "clear-plan", label: "Knowing exactly what to do" },
       { value: "short-options", label: "Short options for busy days" },

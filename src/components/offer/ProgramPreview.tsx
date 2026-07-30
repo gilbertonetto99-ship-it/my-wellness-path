@@ -43,13 +43,13 @@ export function ProgramPreview() {
               />
               <ProgramMockup
                 src="/assets/mockups/habit-tracker.webp"
-                alt="Preview of the printable habit tracker"
+                alt="Preview of the Daily Habit Tracker"
                 sizes="(min-width: 1024px) 12vw, 44vw"
                 aspectRatio="4 / 5"
               />
               <ProgramMockup
-                src="/images/gentle-stretch.webp"
-                alt="Preview of the stretch guide"
+                src="/images/stretch-guide.webp.png"
+                alt="Preview of the Stretch Guide"
                 sizes="(min-width: 1024px) 12vw, 44vw"
                 aspectRatio="4 / 5"
               />

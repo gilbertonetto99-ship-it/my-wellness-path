@@ -1,13 +1,13 @@
-import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check } from "lucide-react";
+import { CHECKOUT_URL } from "../../config/checkout";
 import { MarketingContainer } from "../marketing/MarketingContainer";
 import { SectionEyebrow } from "../marketing/SectionEyebrow";
 
 const SUMMARY = [
-  "Complete 12-week walking roadmap",
-  "Simple strength and recovery support",
-  "Weekly planners and habit tools",
-  "Minimum-day and reentry guidance",
+  "12-Week Walking Roadmap",
+  "Weekly Walking Planner, Daily Habit Tracker, and Reflection Journal",
+  "Guided walking, simple strength, and Stretch Guide",
+  "Minimum-Day Plan and Missed-Week Reentry Guide",
 ];
 
 export function PricingSection() {
@@ -55,18 +55,19 @@ export function PricingSection() {
                 </li>
               ))}
             </ul>
-            <Link
-              to="/checkout"
+            <a
+              href={CHECKOUT_URL}
               className="marketing-focus group mt-7 inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-primary px-7 text-base font-semibold text-primary-foreground shadow-[0_18px_38px_-20px_rgba(23,62,53,.75)] transition-[transform,filter] duration-200 hover:-translate-y-0.5 hover:brightness-110"
             >
-              Get Move Again for $79
+              Get Instant Access
               <ArrowRight
                 aria-hidden="true"
                 className="size-4 transition-transform group-hover:translate-x-0.5"
               />
-            </Link>
+            </a>
             <p className="mt-4 text-center text-xs leading-5 text-muted-foreground">
-              You will review the order details before completing your purchase.
+              Secure checkout powered by Hotmart.
+              <span className="block">Access instructions are provided after purchase.</span>
             </p>
           </div>
         </div>

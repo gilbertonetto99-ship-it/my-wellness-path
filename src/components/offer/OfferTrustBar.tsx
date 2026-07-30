@@ -15,7 +15,7 @@ const ITEMS = [
   {
     icon: CreditCard,
     title: "One-time purchase",
-    copy: "One clear price for the complete system, with no recurring subscription.",
+    copy: "Pay once for the complete system with no subscription. Access instructions are provided after purchase.",
   },
 ];
 

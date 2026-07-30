@@ -1,8 +1,7 @@
-// Placeholder checkout URL for V1. Replace with a real Stripe Payment Link later.
-export const CHECKOUT_URL: string | null = null;
+export const CHECKOUT_URL = "https://pay.hotmart.com/H106930056G";
 
 export const PROGRAM = {
-  name: "StrideWell Program",
+  name: "Move Again",
   duration: "12 weeks",
   price: 79,
   currency: "USD",
