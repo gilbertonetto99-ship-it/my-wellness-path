@@ -113,7 +113,7 @@ export function ResultHero({
         </button>
       </div>
       <LifestyleImage
-        src="/images/walking-friends.webp"
+        src="/images/walking-friends.jpg"
         alt="Friends sharing a relaxed walk together"
         sizes="(min-width: 1024px) 38vw, 92vw"
         aspectRatio="4 / 3"

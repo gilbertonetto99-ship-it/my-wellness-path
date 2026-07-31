@@ -35,20 +35,20 @@ export function ProgramPreview() {
           <div className="rounded-[2rem] border border-primary/12 bg-secondary/60 p-4 shadow-[0_34px_80px_-52px_rgba(23,62,53,.55)] sm:p-7">
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <ProgramMockup
-                src="/assets/mockups/program-preview.webp"
+                src="/images/program-kit.jpg"
                 alt="Preview of the weekly program materials"
                 sizes="(min-width: 1024px) 24vw, 44vw"
                 aspectRatio="4 / 5"
                 className="col-span-2"
               />
               <ProgramMockup
-                src="/assets/mockups/habit-tracker.webp"
+                src="/images/habit-tracker.jpg"
                 alt="Preview of the Daily Habit Tracker"
                 sizes="(min-width: 1024px) 12vw, 44vw"
                 aspectRatio="4 / 5"
               />
               <ProgramMockup
-                src="/images/stretch-guide.webp.png"
+                src="/images/stretch-guide.jpg"
                 alt="Preview of the Stretch Guide"
                 sizes="(min-width: 1024px) 12vw, 44vw"
                 aspectRatio="4 / 5"

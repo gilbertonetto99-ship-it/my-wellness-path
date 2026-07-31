@@ -6,17 +6,17 @@ import { SectionEyebrow } from "./SectionEyebrow";
 const PRODUCTS = [
   {
     title: "Weekly Walking Planner",
-    image: "/images/walking-planner.webp.png",
+    image: "/images/walking-planner.jpg",
     bullets: ["Know exactly what to do each week", "Plan around your real schedule"],
   },
   {
     title: "Reflection Journal",
-    image: "/images/walking-journal.webp.png",
+    image: "/images/walking-journal.jpg",
     bullets: ["See which routines work best for you", "Reflect without judging a missed day"],
   },
   {
     title: "Daily Habit Tracker",
-    image: "/images/habit-tracker.webp.png",
+    image: "/images/habit-tracker.jpg",
     bullets: [
       "Make completed actions easy to see",
       "Track consistency without pressure or perfect streaks",
@@ -24,7 +24,7 @@ const PRODUCTS = [
   },
   {
     title: "12-Week Walking Roadmap",
-    image: "/images/12-week-roadmap.webp.png",
+    image: "/images/12-week-roadmap.jpg",
     bullets: [
       "Know what each stage is helping you build",
       "Move through all 12 weeks with clarity",
@@ -32,7 +32,7 @@ const PRODUCTS = [
   },
   {
     title: "Progress Tracker",
-    image: "/images/progress-tracker.webp.png",
+    image: "/images/progress-tracker.jpg",
     bullets: [
       "See progress that is easy to overlook",
       "Focus on repeatable actions, not perfection",
@@ -40,7 +40,7 @@ const PRODUCTS = [
   },
   {
     title: "Members Area",
-    image: "/images/members-area.webp.png",
+    image: "/images/members-area.jpg",
     bullets: [
       "Keep the complete system organized in one place",
       "Find your next step without sorting through scattered files",
@@ -48,7 +48,7 @@ const PRODUCTS = [
   },
   {
     title: "Stretch Guide",
-    image: "/images/stretch-guide.webp.png",
+    image: "/images/stretch-guide.jpg",
     bullets: [
       "Add gentle movement alongside your walks",
       "Use clear stretching guidance at your pace",
@@ -79,7 +79,7 @@ export function ProgramValueSection() {
 
         <figure className="program-kit-hero relative mx-auto mt-10 max-w-[1080px] overflow-hidden rounded-[2rem] border border-border bg-card sm:mt-14">
           <img
-            src="/images/program-kit.webp.png"
+            src="/images/program-kit.jpg"
             alt="The complete Move Again program kit displayed together"
             loading="lazy"
             decoding="async"

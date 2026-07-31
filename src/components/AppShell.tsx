@@ -22,9 +22,10 @@ export function AppShell({ children, progress, showBack, onBack, wide = false }:
                 type="button"
                 onClick={onBack}
                 aria-label="Back"
-                className="grid h-9 w-9 place-items-center rounded-full hover:bg-muted"
+                className="marketing-focus grid h-9 w-9 place-items-center rounded-full hover:bg-muted"
               >
                 <svg
+                  aria-hidden="true"
                   width="16"
                   height="16"
                   viewBox="0 0 24 24"
@@ -58,7 +59,14 @@ export function AppShell({ children, progress, showBack, onBack, wide = false }:
           <div className="w-9" />
         </div>
         {typeof progress === "number" && (
-          <div className="h-1 bg-muted">
+          <div
+            role="progressbar"
+            aria-label="Assessment progress"
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={Math.round(Math.min(100, Math.max(0, progress * 100)))}
+            className="h-1 bg-muted"
+          >
             <div
               className="h-full rounded-r-full bg-primary transition-all duration-500"
               style={{ width: `${Math.min(100, Math.max(0, progress * 100))}%` }}

@@ -60,7 +60,7 @@ export function OfferHero({ result }: { result: ResultPersonalization | null }) 
             />
           </a>
           <EditorialImage
-            src="/images/offer-planner-coffee.webp"
+            src="/images/offer-planner-coffee.jpg"
             alt="A thoughtfully arranged wellness journal and weekly plan"
             sizes="(min-width: 1024px) 70vw, 92vw"
             aspectRatio="16 / 7"

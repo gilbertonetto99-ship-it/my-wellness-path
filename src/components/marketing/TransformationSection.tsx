@@ -18,7 +18,7 @@ export function TransformationSection() {
         <div className="premium-feature-card grid overflow-hidden rounded-[2rem] border border-border bg-card shadow-[0_35px_90px_-58px_rgba(23,62,53,.55)] lg:grid-cols-[1.08fr_.92fr]">
           <div className="relative min-h-[340px] sm:min-h-[430px] lg:min-h-[610px]">
             <img
-              src="/images/walking-friends.webp"
+              src="/images/walking-friends.jpg"
               alt="Women sharing an uplifting walk together"
               loading="lazy"
               decoding="async"

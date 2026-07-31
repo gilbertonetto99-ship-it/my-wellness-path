@@ -10,7 +10,7 @@ export function FinalCTASection() {
       aria-labelledby="final-cta-title"
     >
       <img
-        src="/images/final-cta-sunset.webp"
+        src="/images/final-cta-sunset.jpg"
         alt=""
         aria-hidden="true"
         loading="lazy"

@@ -38,7 +38,7 @@ export function EarlyProductOverviewSection() {
         <div className="mt-10 grid overflow-hidden rounded-[2rem] border border-border bg-card shadow-[0_32px_80px_-58px_rgba(23,62,53,.34)] lg:grid-cols-[1.2fr_.8fr] lg:items-center">
           <div className="overflow-hidden bg-warm-beige">
             <img
-              src="/images/program-kit.webp.png"
+              src="/images/program-kit.jpg"
               alt="The complete Move Again 12-week program kit"
               loading="lazy"
               decoding="async"

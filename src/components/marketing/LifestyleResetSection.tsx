@@ -19,14 +19,14 @@ export function LifestyleResetSection() {
         <div className="grid overflow-hidden rounded-[2rem] border border-border bg-card lg:grid-cols-[1.1fr_.9fr]">
           <div className="relative min-h-[380px] sm:min-h-[560px] lg:min-h-[720px]">
             <img
-              src="/images/offer-planner-coffee.webp"
+              src="/images/offer-planner-coffee.jpg"
               alt="A calm planning ritual with the Move Again program"
               loading="lazy"
               decoding="async"
               className="absolute inset-0 size-full object-cover"
             />
             <img
-              src="/images/program-kit.webp.png"
+              src="/images/program-kit.jpg"
               alt=""
               aria-hidden="true"
               loading="lazy"

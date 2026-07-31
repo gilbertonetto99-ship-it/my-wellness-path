@@ -33,7 +33,7 @@ export function YoungerAgainSection() {
         <div className="mt-10 grid gap-5 sm:mt-14 lg:grid-cols-[1.2fr_.8fr]">
           <figure className="relative min-h-[420px] overflow-hidden rounded-[2rem] sm:min-h-[520px] lg:min-h-[680px]">
             <img
-              src="/images/walking-park.webp"
+              src="/images/walking-park.jpg"
               alt="A woman walking confidently through a green park"
               loading="lazy"
               decoding="async"
@@ -46,7 +46,7 @@ export function YoungerAgainSection() {
           <div className="grid gap-5">
             <figure className="relative min-h-[240px] overflow-hidden rounded-[2rem] sm:min-h-[300px]">
               <img
-                src="/images/walking-friends.webp"
+                src="/images/walking-friends.jpg"
                 alt="Women enjoying movement and connection together"
                 loading="lazy"
                 decoding="async"

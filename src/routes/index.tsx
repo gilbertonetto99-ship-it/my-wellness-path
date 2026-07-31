@@ -35,14 +35,14 @@ function LandingPage() {
         <TransformationSection />
         <MethodSection />
         <ImageSection
-          src="/images/gentle-stretch.webp"
+          src="/images/gentle-stretch.jpg"
           alt="A gentle stretching ritual in a calm space"
         />
         <YoungerAgainSection />
         <LifestyleResetSection />
         <ProgramValueSection />
         <ImageSection
-          src="/images/planning-routine.webp"
+          src="/images/planning-routine.jpg"
           alt="A calm morning routine prepared for the day"
           align="left"
         />

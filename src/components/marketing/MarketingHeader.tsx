@@ -16,6 +16,7 @@ export function MarketingHeader() {
           </a>
           <MarketingCTA
             compact
+            href="#assessment-preview"
             className="min-h-11 gap-1 px-3 text-xs [&>svg]:hidden sm:gap-2.5 sm:px-5 sm:text-sm sm:[&>svg]:block"
           >
             Find My Starting Plan

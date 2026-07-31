@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   Headphones,
   Lock,
+  NotebookPen,
   Salad,
   Sparkles,
 } from "lucide-react";
@@ -14,6 +15,7 @@ const modules = [
   { t: "12-Week Walking Roadmap", d: "Week 1 ready", i: CalendarDays, p: 18 },
   { t: "Guided walking audio", d: "24 audio sessions", i: Headphones, p: 0 },
   { t: "Daily Habit Tracker", d: "Weekly check-ins", i: CheckCircle2, p: 0 },
+  { t: "Reflection Journal", d: "Printable journal", i: NotebookPen, p: 0 },
   { t: "Simple recipe library", d: "60 practical recipes", i: Salad, p: 0 },
   { t: "Mindset lessons", d: "12 short lessons", i: BookOpen, p: 0 },
 ];

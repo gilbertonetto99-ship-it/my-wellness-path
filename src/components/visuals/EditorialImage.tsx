@@ -45,19 +45,16 @@ function VisualImage({
       data-asset={src}
     >
       {!unavailable ? (
-        <picture>
-          <source srcSet={src} type="image/webp" />
-          <img
-            {...imageProps}
-            src={src}
-            className={cn(
-              "absolute inset-0 size-full transition-opacity duration-500",
-              fit === "cover" ? "object-cover" : "object-contain",
-              loaded ? "opacity-100" : "opacity-0",
-              imageClassName,
-            )}
-          />
-        </picture>
+        <img
+          {...imageProps}
+          src={src}
+          className={cn(
+            "absolute inset-0 size-full transition-opacity duration-500",
+            fit === "cover" ? "object-cover" : "object-contain",
+            loaded ? "opacity-100" : "opacity-0",
+            imageClassName,
+          )}
+        />
       ) : null}
       <span
         aria-hidden="true"
