@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { CHECKOUT_URL } from "../../config/checkout";
+import { CHECKOUT_URL, PROGRAM } from "../../config/checkout";
 import { MarketingContainer } from "../marketing/MarketingContainer";
 
 export function FinalOfferCTA() {
@@ -21,8 +21,15 @@ export function FinalOfferCTA() {
             >
               Your First Week Can Start With One Clear Next Step.
             </h2>
-            <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-muted-foreground">
-              Get the complete 12-week system for a one-time payment of $79.
+            <p className="mt-5 text-sm font-medium text-muted-foreground">
+              Complete System Value: ${PROGRAM.systemValue}
+            </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+              Launch Price
+            </p>
+            <p className="mt-1 font-display text-5xl leading-none text-foreground">
+              ${PROGRAM.sellingPrice.toFixed(2)}{" "}
+              <span className="font-sans text-sm text-muted-foreground">{PROGRAM.currency}</span>
             </p>
             <a
               href={CHECKOUT_URL}
@@ -38,7 +45,9 @@ export function FinalOfferCTA() {
               Secure checkout powered by Hotmart.
               <span className="block">Access instructions are provided after purchase.</span>
             </p>
-            <p className="mt-1 text-sm text-muted-foreground">One-Time Payment · No Subscription</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              One-time payment <span aria-hidden="true">·</span> No subscription
+            </p>
           </div>
         </div>
       </MarketingContainer>

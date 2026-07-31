@@ -1,13 +1,16 @@
 import { ArrowRight, Check } from "lucide-react";
-import { CHECKOUT_URL } from "../../config/checkout";
+import { CHECKOUT_URL, PROGRAM } from "../../config/checkout";
 import { MarketingContainer } from "../marketing/MarketingContainer";
 import { SectionEyebrow } from "../marketing/SectionEyebrow";
 
 const SUMMARY = [
   "12-Week Walking Roadmap",
-  "Weekly Walking Planner, Daily Habit Tracker, and Reflection Journal",
-  "Guided walking, simple strength, and Stretch Guide",
-  "Minimum-Day Plan and Missed-Week Reentry Guide",
+  "Weekly Walking Planner",
+  "Daily Habit Tracker",
+  "Reflection Journal",
+  "Progress Tracker",
+  "Stretch Guide",
+  "Members Area Access",
 ];
 
 export function PricingSection() {
@@ -33,12 +36,22 @@ export function PricingSection() {
             <div className="text-sm font-semibold text-primary">
               The Move Again 12-Week Midlife Walking System
             </div>
-            <div className="mt-5 flex items-end justify-center gap-2">
-              <span className="font-display text-7xl leading-none text-foreground">$79</span>
-              <span className="pb-1.5 text-sm text-muted-foreground">USD</span>
+            <p className="mt-5 text-sm font-medium text-muted-foreground">
+              Complete System Value: ${PROGRAM.systemValue}
+            </p>
+            <div className="mt-4">
+              <div className="text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+                Launch Price
+              </div>
+              <div className="mt-2 flex items-end justify-center gap-2">
+                <span className="font-display text-7xl leading-none text-foreground">
+                  ${PROGRAM.sellingPrice.toFixed(2)}
+                </span>
+                <span className="pb-1.5 text-sm text-muted-foreground">{PROGRAM.currency}</span>
+              </div>
             </div>
             <p className="mt-3 text-sm font-medium text-muted-foreground">
-              One-Time Payment · No Subscription
+              One-time payment <span aria-hidden="true">·</span> No subscription
             </p>
           </div>
           <div className="p-6 sm:p-8">

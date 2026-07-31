@@ -26,7 +26,17 @@ function CheckoutPage() {
               <div className="text-sm text-muted-foreground">{PROGRAM.name}</div>
               <div className="font-display text-xl text-foreground">{PROGRAM.duration}</div>
             </div>
-            <div className="font-display text-3xl text-foreground">${PROGRAM.price}</div>
+            <div className="text-right">
+              <div className="font-display text-3xl text-foreground">
+                ${PROGRAM.sellingPrice.toFixed(2)}{" "}
+                <span className="font-sans text-xs font-medium text-muted-foreground">
+                  {PROGRAM.currency}
+                </span>
+              </div>
+              <div className="mt-1 text-xs text-muted-foreground">
+                One-time payment <span aria-hidden="true">·</span> No subscription
+              </div>
+            </div>
           </div>
         </div>
 
