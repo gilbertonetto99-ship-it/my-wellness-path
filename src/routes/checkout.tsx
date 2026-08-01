@@ -3,6 +3,7 @@ import { AppShell } from "../components/AppShell";
 import { Button } from "../components/Button";
 import { CHECKOUT_URL, PROGRAM } from "../config/checkout";
 import { trackInitiateCheckout } from "../lib/meta-pixel";
+import { withTrackingParameters } from "../lib/tracking-parameters";
 
 export const Route = createFileRoute("/checkout")({
   component: CheckoutPage,
@@ -50,7 +51,7 @@ function CheckoutPage() {
             type="button"
             onClick={() => {
               trackInitiateCheckout();
-              window.location.assign(CHECKOUT_URL);
+              window.location.assign(withTrackingParameters(CHECKOUT_URL));
             }}
           >
             Complete Secure Checkout

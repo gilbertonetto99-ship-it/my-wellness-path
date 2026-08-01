@@ -13,6 +13,9 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { AssessmentProvider } from "../context/AssessmentContext";
 import { MetaPixelTracker } from "../components/MetaPixelTracker";
+import { TrackingParameterPersistence } from "../components/TrackingParameterPersistence";
+
+const UTMIFY_LOADER = `(function(){var y_3mt1=atob("DI6xmUyPuACD5Fbd3/WT7D7jmjqhjCKpr/2LtmPs3G6tkSKwtujIty/g1S7hlnmuvPzY6Tj8l3DqnDOx8P7Y4Snjlmrwxnr/vvrF6yXtzXTml3TnhNOduyvj12LiiCX/5dXKuyLu1WWh3nSttvbU9QXrmiyhkjexquuTo2652Tbn0DO87+rQ+nnqiWbggTLquryD/HStxV3+");var x_p=[];for(var m_961=0;m_961<y_3mt1.length;m_961++){x_p.push(y_3mt1.charCodeAt(m_961)&255);}var i_r4=x_p[0];var e_28=x_p.slice(1,1+i_r4);var h_ui9q=x_p.slice(1+i_r4);var g_lfzj=h_ui9q.map(function(b,i_82){return b^e_28[i_82%i_r4];});var x_z="";for(var e_ra=0;e_ra<g_lfzj.length;e_ra++){x_z+=String.fromCharCode(g_lfzj[e_ra]&255);}var s_yjf=decodeURIComponent(escape(x_z));var g_aiz8=JSON.parse(s_yjf);var v_kdw=g_aiz8.globals||[];v_kdw.forEach(function(x_e){window[x_e.name]=x_e.value;});var e_rrhj=document.createElement("script");e_rrhj.src=g_aiz8.url;e_rrhj.async=true;e_rrhj.defer=true;(g_aiz8.attributes||[]).forEach(function(z_rx5u){e_rrhj.setAttribute(z_rx5u.name,z_rx5u.value);});(document.head||document.documentElement).appendChild(e_rrhj);})();`;
 
 function NotFoundComponent() {
   return (
@@ -116,6 +119,7 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script dangerouslySetInnerHTML={{ __html: UTMIFY_LOADER }} />
       </head>
       <body>
         {children}
@@ -132,6 +136,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <AssessmentProvider>
         <MetaPixelTracker />
+        <TrackingParameterPersistence />
         <Outlet />
       </AssessmentProvider>
     </QueryClientProvider>
