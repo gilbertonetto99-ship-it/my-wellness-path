@@ -9,6 +9,7 @@ import { ResultsOfferBridge } from "../components/results/ResultsOfferBridge";
 import { StartingStyleCard } from "../components/results/StartingStyleCard";
 import { useAssessment } from "../context/AssessmentContext";
 import { createResultPersonalization } from "../lib/result-personalization";
+import { trackResultView } from "../lib/meta-pixel";
 
 export const Route = createFileRoute("/results")({ component: ResultsPage });
 
@@ -22,6 +23,10 @@ function ResultsPage() {
       navigate({ to: "/assessment", replace: true });
     }
   }, [isComplete, isHydrated, navigate]);
+
+  useEffect(() => {
+    if (isHydrated && isComplete) trackResultView();
+  }, [isComplete, isHydrated]);
 
   function retakeAssessment() {
     reset();

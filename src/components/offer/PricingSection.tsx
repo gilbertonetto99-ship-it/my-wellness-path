@@ -2,6 +2,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { CHECKOUT_URL, PROGRAM } from "../../config/checkout";
 import { MarketingContainer } from "../marketing/MarketingContainer";
 import { SectionEyebrow } from "../marketing/SectionEyebrow";
+import { trackInitiateCheckout } from "../../lib/meta-pixel";
 
 const SUMMARY = [
   "12-Week Walking Roadmap",
@@ -70,6 +71,7 @@ export function PricingSection() {
             </ul>
             <a
               href={CHECKOUT_URL}
+              onClick={trackInitiateCheckout}
               className="marketing-focus group mt-7 inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-primary px-7 text-base font-semibold text-primary-foreground shadow-[0_18px_38px_-20px_rgba(23,62,53,.75)] transition-[transform,filter] duration-200 hover:-translate-y-0.5 hover:brightness-110"
             >
               Get Instant Access

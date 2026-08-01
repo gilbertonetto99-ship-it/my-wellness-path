@@ -179,7 +179,7 @@ export function LandingConversionSupport() {
       >
         <div className="mx-auto flex max-w-md items-center gap-3">
           <p className="min-w-0 flex-1 text-xs font-medium leading-5 text-muted-foreground">
-            Free 3-minute assessment
+            Free 60-second assessment
           </p>
           <Link
             to="/assessment"
@@ -213,7 +213,7 @@ export function LandingConversionSupport() {
               Still Wondering Where to Begin?
             </DialogTitle>
             <DialogDescription className="mt-4 text-base leading-7 text-muted-foreground">
-              Take the free 3-minute assessment and discover a starting plan designed around your
+              Take the free 60-second assessment and discover a starting plan designed around your
               schedule, current activity, and real life.
             </DialogDescription>
           </div>

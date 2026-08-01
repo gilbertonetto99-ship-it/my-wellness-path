@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { CHECKOUT_URL, PROGRAM } from "../../config/checkout";
 import { MarketingContainer } from "../marketing/MarketingContainer";
+import { trackInitiateCheckout } from "../../lib/meta-pixel";
 
 export function FinalOfferCTA() {
   return (
@@ -33,6 +34,7 @@ export function FinalOfferCTA() {
             </p>
             <a
               href={CHECKOUT_URL}
+              onClick={trackInitiateCheckout}
               className="marketing-focus group mt-8 inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-primary px-7 text-base font-semibold text-primary-foreground shadow-[0_18px_38px_-20px_rgba(23,62,53,.75)] transition-[transform,filter] duration-200 hover:-translate-y-0.5 hover:brightness-110 sm:w-auto"
             >
               Get Instant Access

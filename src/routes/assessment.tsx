@@ -5,6 +5,7 @@ import { QuizQuestion } from "../components/quiz/QuizQuestion";
 import { QuizShell } from "../components/quiz/QuizShell";
 import { useAssessment, type AssessmentAnswers } from "../context/AssessmentContext";
 import { isQuizAnswered, QUIZ_QUESTIONS } from "../lib/questions";
+import { trackQuizComplete, trackQuizStart } from "../lib/meta-pixel";
 
 export const Route = createFileRoute("/assessment")({
   component: AssessmentPage,
@@ -43,11 +44,13 @@ function AssessmentPage() {
     if (transitioning) return;
     if (!question.options.some((option) => option.value === value)) return;
 
+    trackQuizStart();
     setAnswer(question.key, value as AssessmentAnswers[typeof question.key]);
     setTransitioning(true);
 
     advanceTimer.current = setTimeout(() => {
       if (index === QUIZ_QUESTIONS.length - 1) {
+        trackQuizComplete();
         navigate({ to: "/analyzing" });
         return;
       }

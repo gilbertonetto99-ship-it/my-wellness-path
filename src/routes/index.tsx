@@ -15,6 +15,7 @@ import { ProgramValueSection } from "../components/marketing/ProgramValueSection
 import { LifestyleResetSection } from "../components/marketing/LifestyleResetSection";
 import { YoungerAgainSection } from "../components/marketing/YoungerAgainSection";
 import { ImageSection } from "../components/visuals/ImageSection";
+import { WhatYouReceiveSection } from "../components/marketing/WhatYouReceiveSection";
 
 export const Route = createFileRoute("/")({ component: LandingPage });
 
@@ -30,6 +31,7 @@ function LandingPage() {
       <MarketingHeader />
       <main id="main-content" className="landing-premium">
         <HeroSection />
+        <WhatYouReceiveSection />
         <HeroTrustStrip />
         <RecognitionSection />
         <TransformationSection />

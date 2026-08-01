@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { AppShell } from "../components/AppShell";
 import { Button } from "../components/Button";
 import { CHECKOUT_URL, PROGRAM } from "../config/checkout";
+import { trackInitiateCheckout } from "../lib/meta-pixel";
 
 export const Route = createFileRoute("/checkout")({
   component: CheckoutPage,
@@ -45,7 +46,13 @@ function CheckoutPage() {
             Your payment will be completed securely through Hotmart.
           </div>
 
-          <Button type="button" onClick={() => window.location.assign(CHECKOUT_URL)}>
+          <Button
+            type="button"
+            onClick={() => {
+              trackInitiateCheckout();
+              window.location.assign(CHECKOUT_URL);
+            }}
+          >
             Complete Secure Checkout
           </Button>
 
